@@ -1,0 +1,6 @@
+com\example\onboarding\dto\StudentDTO.class
+com\example\onboarding\controller\StudentController.class
+com\example\onboarding\service\StudentService.class
+com\example\onboarding\OnboardingApplication.class
+com\example\onboarding\repository\StudentRepository.class
+com\example\onboarding\entity\Student.class
