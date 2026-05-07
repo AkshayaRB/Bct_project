@@ -1,0 +1,5 @@
+base\BasePage.class
+pages\LoginPage.class
+pages\DashboardPage.class
+utils\LoggerUtil.class
+utils\ScreenshotUtil.class

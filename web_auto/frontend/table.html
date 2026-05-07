@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List - Student Onboarding</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="dashboard.html" id="nav-dashboard">Dashboard</a>
+      <a href="form.html" id="nav-form">Data Form</a>
+      <a href="dynamic.html" id="nav-dynamic">Dynamic Content</a>
+      <a href="table.html" class="active" id="nav-table">Student List</a>
+      <a href="#" id="logout-btn" style="margin-left: auto;">Logout</a>
+    </nav>
+    
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Student Directory</h1>
+      <input type="text" id="search-input" placeholder="Search students..." style="width: 300px;">
+    </div>
+    
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Department</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data loaded dynamically -->
+      </tbody>
+    </table>
+  </div>
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - Student Onboarding</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="dashboard.html" id="nav-dashboard">Dashboard</a>
+      <a href="form.html" class="active" id="nav-form">Data Form</a>
+      <a href="dynamic.html" id="nav-dynamic">Dynamic Content</a>
+      <a href="table.html" id="nav-table">Student List</a>
+      <a href="#" id="logout-btn" style="margin-left: auto;">Logout</a>
+    </nav>
+    
+    <h1>Student Entry Form</h1>
+    
+    <div class="success-message"></div>
+    
+    <form id="data-form" style="max-width: 600px;">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" data-test="name-input" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" data-test="email-input" required>
+      </div>
+
+      <div class="form-group" style="display: flex; gap: 1rem;">
+        <div style="flex: 1;">
+          <label for="age">Age</label>
+          <input type="number" id="age" data-test="age-input" required min="18" max="100">
+        </div>
+        <div style="flex: 2;">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" data-test="phone-input" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select id="department" data-test="dept-select">
+          <option value="cs">Computer Science</option>
+          <option value="ee">Electrical Engineering</option>
+          <option value="me">Mechanical Engineering</option>
+          <option value="ce">Civil Engineering</option>
+          <option value="ma">Mathematics</option>
+        </select>
+      </div>
+
+      <div class="form-group" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+        <input type="checkbox" id="terms" data-test="terms-checkbox" style="width: auto;">
+        <label for="terms" style="margin: 0;">I agree to the terms</label>
+      </div>
+
+      <div class="form-group">
+        <label>Role</label>
+        <div style="display: flex; gap: 1rem;">
+          <label><input type="radio" name="role" value="student" id="role-student" data-test="role-student" checked> Student</label>
+          <label><input type="radio" name="role" value="ta" id="role-ta" data-test="role-ta"> Teaching Assistant</label>
+        </div>
+      </div>
+      
+      <button type="submit" id="submit-form" class="btn" data-test="form-submit">Save Record</button>
+    </form>
+  </div>
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>

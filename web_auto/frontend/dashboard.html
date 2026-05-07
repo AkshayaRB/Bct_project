@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Student Onboarding</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="dashboard.html" class="active" id="nav-dashboard">Dashboard</a>
+      <a href="form.html" id="nav-form">Data Form</a>
+      <a href="dynamic.html" id="nav-dynamic">Dynamic Content</a>
+      <a href="table.html" id="nav-table">Student List</a>
+      <a href="#" id="logout-btn" style="margin-left: auto;">Logout</a>
+    </nav>
+    
+    <h1>Dashboard</h1>
+    <p>Welcome to the Student Onboarding System admin panel.</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+        <h3>System Status</h3>
+        <p style="color: var(--success); margin-top: 1rem; font-size: 1.2rem; font-weight: 600;">All Systems Operational</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+        <h3>Quick Actions</h3>
+        <a href="form.html" class="btn" style="margin-top: 1rem;">Add New Student</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>
